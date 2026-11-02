@@ -47,3 +47,6 @@ lots:
     visible: true
     screen: page
     created: 2026-11-02
+acknowledged:
+  - { sha: aa81ded8a753fac33a56619171e81d31026b5a67, subject: Initial commit, date: 2026-11-02, reason: commit initial de GitHub }
+  - { sha: 3c541deb6e8349d61749814f8f6f936d75438100, subject: "plan: projet blue-fleet créé, six premiers lots (collecteurs, squelette, vue d'ensemble, fiche machine)", date: 2026-11-02, reason: création du projet et du plan }
