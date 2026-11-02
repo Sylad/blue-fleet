@@ -1,0 +1,49 @@
+# Plan « reste à faire » tenu par raf (https://github.com/Sylad/cadence).
+# Édité par le CLI, mais les modifications à la main et les commentaires sont préservés.
+# Un commit appartient à un lot quand son message cite l'identifiant (L3, L3/t1).
+version: 1
+project: "blue-fleet"
+prefix: L
+since: 2026-11-02 # raf check ignore les commits antérieurs à l'adoption
+lots:
+  - id: L1
+    title: "Collecteur Big-Blue — non tirable (installation sur le PC de Sylvain, à valider avec lui) : windows_exporter (service Windows) + node-exporter dans la distribution WSL Ubuntu, scrapés par le Prometheus du chart monitoring de dark-blue (LAN seulement) ; mesure : séries up=1 pour les deux cibles"
+    status: todo
+    estimate: 0.5
+    created: 2026-11-02
+  - id: L2
+    title: "Collecteur mini-blue : windows_exporter + node-exporter dans WSL Ubuntu-24.04, scrapés par le Prometheus de dark-blue (LAN) ; mesure : up=1"
+    status: todo
+    estimate: 0.5
+    created: 2026-11-02
+    notes:
+      - { date: 2026-11-02, text: "non tirable : installation sur mini-blue et scrape ajouté au chart monitoring (aetherwx-gitops) — geste du lead" }
+  - id: L3
+    title: "Collecteurs NAS et statut : NAS Synology (SNMP ou node-exporter) + sonde blackbox (ping/TCP) des quatre machines pour allumé/éteint, scrapés par le Prometheus de dark-blue ; mesure : une série par machine"
+    status: todo
+    estimate: 0.5
+    created: 2026-11-02
+    notes:
+      - { date: 2026-11-02, text: "non tirable : accès au NAS et chart monitoring (aetherwx-gitops) — geste du lead" }
+  - id: L4
+    title: "Squelette app : NestJS (lit l'API Prometheus) + React/TanStack/Tailwind, /api/health, CI GitHub → GHCR, chart dans developpeur-gitops, Application ArgoCD ; exposition LAN ou Cloudflare Access + PIN, JAMAIS publique (cartographie du réseau)"
+    status: todo
+    estimate: 0.5
+    created: 2026-11-02
+  - id: L5
+    title: "Vue d'ensemble des machines : statut allumé/éteint, OS, charge, mémoire, uptime — fiche et maquette d'abord"
+    public: Vue d'ensemble des machines
+    status: todo
+    estimate: 0.5
+    visible: true
+    screen: page
+    spec: true
+    created: 2026-11-02
+  - id: L6
+    title: "Fiche machine : distributions WSL, processus les plus gourmands, disques, températures, GPU"
+    public: Fiche d'une machine
+    status: todo
+    estimate: 0.5
+    visible: true
+    screen: page
+    created: 2026-11-02
